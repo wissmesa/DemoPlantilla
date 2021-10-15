@@ -1,0 +1,11 @@
+ .prueba{
+  display:flex !important;
+   justify-content:center; 
+   border-width: 100px;
+   border-color: black;
+ }
+
+ .prueba2{
+   background-color: saddlebrown;
+ }
+ 
