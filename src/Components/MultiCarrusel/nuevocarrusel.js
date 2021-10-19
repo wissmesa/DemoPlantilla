@@ -1,6 +1,37 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import  "../MultiCarrusel/style.css";
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
+import { CardActionArea } from '@mui/material';
+import imagen4 from "../../imagen/imagen4.jpg"
+import {Contenedor,EstiloCarta} from "../../Components/NuestrosAliados/EstiloAliados"
+import { Prueba,Prueba2 } from "../MultiCarrusel/Estilomulticarrusel";
+import ActionAreaCard from "../NuestrosAliados/Nuestrosaliados";
+
+const arrayItems = [
+  {
+    titulo:"item1",
+    descripcion:"descripcion item 1",
+    imagen: "imagen/imagen1.jpg"
+  },
+  {
+    titulo:"item2",
+    descripcion:"descripcion item 2",
+    imagen: "imagen/imagen2.jpg"
+  },
+  {
+    titulo:"item3",
+    descripcion:"descripcion item 3",
+    imagen: "imagen/imagen3.jpg"
+  },
+  {
+    titulo:"item4",
+    descripcion:"descripcion item 4",
+    imagen: "imagen/imagen4.jpg"
+  },
+]
 
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -24,6 +55,7 @@ function SampleNextArrow(props) {
     );
   }
 
+
 export default class NuevoCarrusel extends Component {
   render() {
     const settings = {
@@ -36,22 +68,22 @@ export default class NuevoCarrusel extends Component {
       prevArrow:<SamplePrevArrow/>,
     };
     return (
-      <div className="prueba2" style= {{margin:50,  alignItems:"center"}}>
+      <Prueba2  style= {{margin:50,  alignItems:"center"}}>
         <h2> Multiple items </h2>
         <Slider {...settings}>
 
-            {[1,2,3,4,5,6,7,8,9,10].map((item,i)=> (
+            {arrayItems.map((item,i)=> (
 
           <div >
-              <div className="prueba">
-            <h3  >{i} </h3>
-
-              </div>
+              {/* <Prueba >
+            < h3 >{i} </h3>
+              </Prueba> */}
+              <ActionAreaCard item={item} />
           </div>
             ))}
 
         </Slider>
-      </div>
+      </Prueba2>
     );
   }
 }

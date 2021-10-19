@@ -3,10 +3,13 @@ import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDB
 "mdbreact";
 import 'bootstrap-css-only/css/bootstrap.min.css'; 
 import 'mdbreact/dist/css/mdb.css';
+import imagen1  from "../../imagen/imagen1.jpg";
+import imagen2  from "../../imagen/imagen2.jpg";
+import imagen3  from "../../imagen/imagen3.jpg";
 
 const Carrusel = () => {
   return (
-  
+
     // <MDBContainer style={{width:'100%', marginleft:-10}}>
       <MDBCarousel
       activeItem={1}
@@ -22,7 +25,7 @@ const Carrusel = () => {
           <MDBView >
             <img 
               className="d-block w-100"
-              src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg"
+              src={imagen1}
               alt="First slide"
             />
           <MDBMask overlay="black-light" />
@@ -32,12 +35,12 @@ const Carrusel = () => {
             <p>First text</p>
           </MDBCarouselCaption>
         </MDBCarouselItem>
-        
+
  <MDBCarouselItem itemId="2">
           <MDBView>
             <img
               className="d-block w-100"
-              src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
+              src={imagen2}
               alt="Second slide"
             />
           <MDBMask overlay="black-strong" />
@@ -51,7 +54,7 @@ const Carrusel = () => {
           <MDBView>
             <img
               className="d-block w-100"
-              src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
+              src={imagen3}
               alt="Third slide"
             />
           <MDBMask overlay="black-slight" />
@@ -61,7 +64,7 @@ const Carrusel = () => {
             <p>Third text</p>
           </MDBCarouselCaption>
         </MDBCarouselItem>
-    
+
       </MDBCarouselInner>
     </MDBCarousel>
     // </MDBContainer>
