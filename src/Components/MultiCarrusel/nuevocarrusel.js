@@ -1,13 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
-import imagen4 from "../../imagen/imagen4.jpg"
-import {Contenedor,EstiloCarta} from "../../Components/NuestrosAliados/EstiloAliados"
-import { Prueba,Prueba2 } from "../MultiCarrusel/Estilomulticarrusel";
+
+import {Prueba2 } from "../MultiCarrusel/Estilomulticarrusel";
 import ActionAreaCard from "../NuestrosAliados/Nuestrosaliados";
 
 const arrayItems = [

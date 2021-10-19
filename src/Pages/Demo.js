@@ -5,6 +5,7 @@ import Directorio from "../Components/Directoriotelefono/Directorio"
 import NuevoCarrusel from '../Components/MultiCarrusel/nuevocarrusel'
 import Nuestrosaliados from "../Components/NuestrosAliados/Nuestrosaliados"
 import Pills from "../Components/Pills/Pills"
+import  Prueba  from '../Components/NuestrosAliados/Prueba'
 const Demo = () => {
     return (
         <div>
@@ -13,7 +14,9 @@ const Demo = () => {
              <NuevoCarrusel/>
              <Actividades/>
              <Directorio/>
-             <Nuestrosaliados/>
+             
+             <Prueba/>
+             
              
         </div>
     )
