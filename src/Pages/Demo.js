@@ -14,10 +14,14 @@ const Demo = () => {
              <NuevoCarrusel/>
              <Actividades/>
              <Directorio/>
+<<<<<<< HEAD
              
              <Prueba/>
              
              
+=======
+             <Nuestrosaliados/>
+>>>>>>> 3021b6e1ab84ddb135125ab98dece6bd5574f47e
         </div>
     )
 }
