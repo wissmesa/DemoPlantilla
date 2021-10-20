@@ -5,13 +5,13 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import {Contenedor,EstiloCarta} from "../../Components/NuestrosAliados/EstiloAliados"
+import {ContenedorPrueba,EstiloCarta} from "../../Components/NuestrosAliados/EstiloAliados"
 import imagen4 from "../../imagen/imagen4.jpg"
 import imagen2 from "../../imagen/imagen2.jpg"
 import imagen3 from "../../imagen/imagen3.jpg"
 export default function ActionAreaCard() {
   return (
-<Contenedor>
+<ContenedorPrueba>
     <EstiloCarta>
         <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>
@@ -77,6 +77,6 @@ export default function ActionAreaCard() {
             </CardActionArea>
           </Card>
     </EstiloCarta>
- </Contenedor>
+ </ContenedorPrueba>
   );
 }

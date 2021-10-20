@@ -32,7 +32,7 @@ function SampleNextArrow(props) {
     return (
       <div
         className={className}
-        style={{ ...style, display: "block", background: "red" }}
+        style={{ ...style, display: "block", background: "red", margin:50 }}
         onClick={onClick}
       />
     );
@@ -43,7 +43,7 @@ function SampleNextArrow(props) {
     return (
       <div
         className={className}
-        style={{ ...style, display: "block", background: "green" }}
+        style={{ ...style, display: "block", background: "green", margin:50 }}
         onClick={onClick}
       />
     );
@@ -62,8 +62,10 @@ export default class NuevoCarrusel extends Component {
       prevArrow:<SamplePrevArrow/>,
     };
     return (
-      <Prueba2  style= {{margin:50,  alignItems:"center"}}>
+      
+      <Prueba2  >
         <h2> Multiple items </h2>
+
         <Slider {...settings}>
 
             {arrayItems.map((item,i)=> (
@@ -72,7 +74,7 @@ export default class NuevoCarrusel extends Component {
               {/* <Prueba >
             < h3 >{i} </h3>
               </Prueba> */}
-              <ActionAreaCard item={item} />
+              <ActionAreaCard item={item}  />
           </div>
             ))}
 

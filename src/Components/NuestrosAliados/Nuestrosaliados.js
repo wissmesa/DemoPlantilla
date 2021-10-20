@@ -14,7 +14,7 @@ export default function ActionAreaCard({item}) {
 
 
     <EstiloCarta>
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 345,margin:5 }}>
           <CardActionArea>
             <CardMedia
               component="img"
