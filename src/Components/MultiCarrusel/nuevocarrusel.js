@@ -1,3 +1,4 @@
+import { padding } from "@mui/system";
 import React, { Component } from "react";
 import Slider from "react-slick";
 
@@ -32,7 +33,9 @@ function SampleNextArrow(props) {
     return (
       <div
         className={className}
-        style={{ ...style, display: "block", background: "red", margin:50 }}
+        style={{ ...style, display: "block", margin:50,zIndex:999,
+        position:"absolute",
+        marginTop:10   }}
         onClick={onClick}
       />
     );
@@ -43,7 +46,10 @@ function SampleNextArrow(props) {
     return (
       <div
         className={className}
-        style={{ ...style, display: "block", background: "green", margin:50 }}
+        style={{ ...style, display: "block",  margin:50,zIndex:999,
+         position:"absolute",
+        marginTop:10,
+        marginRight:1000   }}
         onClick={onClick}
       />
     );
@@ -66,15 +72,13 @@ export default class NuevoCarrusel extends Component {
       <Prueba2  >
         <h2> Multiple items </h2>
 
-        <Slider {...settings}>
+        <Slider className="test1" style={{marginLeft:"auto", marginRight:10}} {...settings}>
 
             {arrayItems.map((item,i)=> (
 
-          <div >
-              {/* <Prueba >
-            < h3 >{i} </h3>
-              </Prueba> */}
-              <ActionAreaCard item={item}  />
+          <div className="pruebaDiv" >
+            {
+              <ActionAreaCard style={{ marginRight:10}}  item={item}  />}
           </div>
             ))}
 
